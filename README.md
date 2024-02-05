@@ -1,2 +1,2 @@
 # Healthy-N-Fit
-App for healthy and fitness nutrition.
+Angular App for healthy and fitness nutrition.
