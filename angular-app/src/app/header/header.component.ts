@@ -7,9 +7,13 @@ import { DataStorageService } from '../shared/data-storage.service';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  constructor(private dataStorageservice: DataStorageService) {}
+  constructor(private dataStorageService: DataStorageService) {}
 
   onSaveData() {
-    this.dataStorageservice.storeRecipes();
+    this.dataStorageService.storeRecipes();
+  }
+
+  onFetchData() {
+    this.dataStorageService.fetchRecipes();
   }
 }
