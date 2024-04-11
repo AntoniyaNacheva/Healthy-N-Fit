@@ -9,20 +9,22 @@ import { ShoppingListService } from '../shopping-list/shopping-list.service';
 export class RecipeService {
   recipesChanged = new Subject<Recipe[]>();
 
-  private recipes: Recipe[] = [
-    new Recipe(
-      'A Test Recipe',
-      'This is simple a test',
-      'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
-      [new Ingredient('Meat', 1), new Ingredient('Milk', 1)]
-    ),
-    new Recipe(
-      'Another Test Recipe',
-      'This is simple a test',
-      'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
-      [new Ingredient('Bread', 2), new Ingredient('Meat', 3)]
-    ),
-  ];
+  // private recipes: Recipe[] = [
+  //   new Recipe(
+  //     'A Test Recipe',
+  //     'This is simple a test',
+  //     'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
+  //     [new Ingredient('Meat', 1), new Ingredient('Milk', 1)]
+  //   ),
+  //   new Recipe(
+  //     'Another Test Recipe',
+  //     'This is simple a test',
+  //     'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
+  //     [new Ingredient('Bread', 2), new Ingredient('Meat', 3)]
+  //   ),
+  // ];
+
+  private recipes: Recipe[] = [];
 
   constructor(private shoppingListService: ShoppingListService) {}
 
