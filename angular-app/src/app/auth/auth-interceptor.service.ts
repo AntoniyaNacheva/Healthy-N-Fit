@@ -8,7 +8,7 @@ import {
 import { Injectable } from '@angular/core';
 import { Observable, exhaustMap, take } from 'rxjs';
 
-import { AuthService } from './auth-service';
+import { AuthService } from './auth.service';
 
 @Injectable()
 export class AuthInterceptorService implements HttpInterceptor {
